@@ -5,7 +5,7 @@ const express = require('express')
     cors = require('cors')
     ejs = require('ejs')
     session = require('express-session')
-    expressLayouts = require('express-ejs-layouts')
+    expressLayout = require('express-ejs-layouts')
     bodyParser = require('body-parser')
     db = require('./db/db')
 
@@ -16,7 +16,7 @@ const express = require('express')
     app.use(express.static('public'))
 
     // views
-    app.use(expressLayouts)
+    app.use(expressLayout)
     app.set('view engine', 'ejs')
 
     // form encoding
