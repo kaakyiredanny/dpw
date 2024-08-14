@@ -4,7 +4,7 @@ const session = require('express-session')
     app = express()
     cors = require('cors')
     ejs = require('ejs')
-    session = require('express-session')
+    appsession = require('express-session')
     bodyParser = require('body-parser')
     db = require('./db/db')
 
@@ -19,7 +19,7 @@ const session = require('express-session')
     app.use(express.urlencoded({ extended: false }))
     app.use(bodyParser.json())
 
-    app.use(session({
+    app.use(appsession({
         secret: 'secretkey',
         resave: false,
         saveUninitialized: false,
