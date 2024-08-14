@@ -1,7 +1,6 @@
 // app config
 const express = require('express')
     app = express()
-    dotenv = require('dotenv')
     cors = require('cors')
     ejs = require('ejs')
     session = require('express-session')
@@ -9,8 +8,6 @@ const express = require('express')
     bodyParser = require('body-parser')
     db = require('./db/db')
 
-    // environment configs
-    dotenv.config()
 
     // static files
     app.use(express.static('public'))
