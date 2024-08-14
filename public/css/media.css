@@ -178,7 +178,7 @@
     }
     .infos :is(strong), .tools :is(strong), 
     .mission :is(strong), .media :is(i), .copyright :is(i, strong){
-        color: deeppink;
+        color: rgb(240, 66, 158);;
     }
     .lessons{
         display: flex;
@@ -237,7 +237,7 @@
         aspect-ratio: 16/9;
     }
     .key :is(i, strong){
-        color: deeppink;
+        color: rgb(240, 66, 158);
     }
     .image{
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
