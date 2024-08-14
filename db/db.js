@@ -6,6 +6,7 @@ const mysql = require('mysql')
         password: 'kaakyiredanny',
         database: ''
     })
+    
     db.connect(err => {
         if (err) throw err
         console.log(`http:${process.env.sever_port}//database connected...`)
