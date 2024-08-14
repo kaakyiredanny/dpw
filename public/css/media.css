@@ -199,4 +199,13 @@
         margin-top: 2rem;
         font-size: 0.9rem;
     }
+    .owner{
+        width: 180px;
+        margin: 2rem 3.7rem;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        aspect-ratio: 16/9;
+        background-image: url('../images/Daniel\ Nimako.png');
+        background-position: center;
+        background-size: cover;
+    }
 }

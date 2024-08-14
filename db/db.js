@@ -5,7 +5,12 @@ const mysql = require('mysql')
         user: 'ue19lhkmruzunaqh',
         password: 'WLahzkJAMwm25shWdDg3',
         port: 3306,
-        database: 'bxzbirx9bm5taofehmmg'
+        database: 'bxzbirx9bm5taofehmmg',
+
+        // host: 'localhost',
+        // user: 'root',
+        // password: 'kaakyiredanny',
+        // database: 'dpw'
     })
 
     db.connect(err => {
