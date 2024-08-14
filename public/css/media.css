@@ -158,6 +158,37 @@
         font-weight: bold;
     }
 
+
+
+    /* SIGNUPSECTION */
+    .signupsection{
+        margin-top: 0.5rem;
+        aspect-ratio: 16/9;
+        border: 1px dashed lightblue;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .signup-info{
+        padding: 5px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .signup-form{
+        padding: 5px;
+        margin-bottom: 3rem;
+    }
+    .signup-form .input-group{
+        margin-top: 0.5rem;
+    }
+    #txt{
+        padding: 10px;
+    }
+
+
+
+
+
     
 
     /* FOOTER PART */
