@@ -109,6 +109,9 @@ const { default: nodemon } = require('nodemon')
                         throw err
                     } else {
                         console.log('info :' + info.response)
+                        res.render('signup', {
+                            msg: 'Thank you for signing up with us...'
+                        })
                     }
                 })
 
