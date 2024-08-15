@@ -4,19 +4,39 @@ const { default: nodemon } = require('nodemon')
     db = require('../db/db')
     nodemailer = require('nodemailer')
     
-    
+        // homepage route 
     router.get('/', (req, res) => {
         res.render('home')
     })
 
-
+    // signup route
     router.get('/signup', (req, res) => {
         res.render('signup')
     })
 
+    // outline route
+    router.get('/outline', (req, res) => {
+        res.render('outline')
+    })
+
+    // aboutus route
+    router.get('/aboutus', (req, res) => {
+        res.render('aboutus')
+    })
+    
+    // seminars route
+    router.get('/seminars', (req, res) => {
+        res.render('seminars')
+    })
+    
+    // community route
+    router.get('/community', (req, res) => {
+        res.render('community')
+    })
 
 
 
+    // ==============================================================================================================
     // SIGNUP ROUTE
     router.post('/signup', (req,res) => {
     const { clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue } = req.body
@@ -37,7 +57,7 @@ const { default: nodemon } = require('nodemon')
 
                 html = `
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="en"> 
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
