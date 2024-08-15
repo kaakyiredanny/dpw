@@ -200,6 +200,7 @@
         aspect-ratio: 16/9;
         display: flex;
         flex-direction: column;
+        border: 3px dashed lightblue;
     }
     .html,.css,.javscript,.java,.php,.python,.c_plus,.csharp,.kotlin,.nodejs{
         clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
