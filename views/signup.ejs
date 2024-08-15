@@ -55,60 +55,66 @@
 
 <section class="signupsection">
     <div class="signup-info">
-        <h4>Welcome to Our Membership Course Program</h4>
+        <h4><i class="uil uil-users-alt"></i> Welcome to Our Membership Course Program</h4>
         <hr>
 
-        <p>Join our membership program to get access to our exclusive courses, seminars, and resources. We will also provide you with the opportunity to work with our talented instructors and mentors. </p>
+        <p>Join our membership program to <strong>get access to our exclusive courses, seminars, and resources</strong>. We will also provide you with the opportunity to work with our talented instructors and mentors. </p>
     </div>
     <div class="signup-form">
         <form action="/signup" method="post">
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">@</span>
-                <input type="text" class="form-control form-control-sm" name="clientname" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                <span class="input-group-text" id="addon-wrapping"><i class="uil uil-at"></i></span>
+                <input type="text" class="form-control form-control-sm" name="clientname" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
             </div>
 
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"><i class="uil uil-envelope"></i></span>
-                <input type="email" class="form-control form-control-sm" name="clientmail" placeholder="Usermail" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="email" class="form-control form-control-sm" name="clientmail" placeholder="Usermail" aria-label="Username" aria-describedby="addon-wrapping" required>
             </div>
 
             
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"><i class="uil uil-calender"></i></span>
-                <input type="date" class="form-control form-control-sm" name="clientbirthdate" placeholder="Birth date" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="date" class="form-control form-control-sm" name="clientbirthdate" placeholder="Birth date" aria-label="Username" aria-describedby="addon-wrapping" required>
             </div>
 
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"><i class="uil uil-phone"></i></span>
-                <input type="number" class="form-control form-control-sm" name="clientnumber" placeholder="Phone number" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="number" class="form-control form-control-sm" name="clientnumber" placeholder="Phone number" aria-label="Username" aria-describedby="addon-wrapping" required>
             </div>
 
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"><i class="uil uil-map-marker"></i></span>
-                <input type="text" class="form-control form-control-sm" name="clientlocation" placeholder="Location" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control form-control-sm" name="clientlocation" placeholder="Location" aria-label="Username" aria-describedby="addon-wrapping" required>
             </div>
             
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"><i class="uil uil-postcard"></i></span>
-                <input type="text" class="form-control form-control-sm" name="clientid" placeholder="A valid ID number" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control form-control-sm" name="clientid" placeholder="A valid ID number" aria-label="Username" aria-describedby="addon-wrapping" required>
             </div>
             
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"><i class="uil uil-user"></i></span>
-                <input type="text" class="form-control form-control-sm" name="sponsorname" placeholder="Sponsor name" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control form-control-sm" name="sponsorname" placeholder="Sponsor name" aria-label="Username" aria-describedby="addon-wrapping" required>
             </div>
             
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"><i class="uil uil-wheelchair"></i></span>
                 <textarea name="healthissue" id="txt" cols="90" rows="5" 
-                placeholder="Tell us about your health. Any health issues concerning your ears, eyes, hands or legs etc"></textarea>
+                placeholder="Tell us about your health. Any health issues concerning your ears, eyes, hands or legs etc" required></textarea>
             </div>
 
             <div>
-                <input type="submit" class="btn btn-sm btn-info w-100 mt-3" value="Proceed to payment">
+                <input type="submit" class="btn btn-sm btn-secondary w-100 mt-3" value="Proceed to payment">
+            </div>
+        </form>
+
+        <% if(msg != 'undefined'){ %>
+            <div style="color: yellowgreen; font-size: 14px; font-weight: bold;">
+                <%= msg %>
             </div>
 
-        </form>
+       <% } %>
     </div>
 </section>
 

@@ -168,11 +168,18 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
     }
     .signup-info{
         padding: 5px;
         width: 100%;
         aspect-ratio: 16/9;
+    }
+    .signup-info :is(i),.signup-form :is(i){
+        color: deeppink;
+    }
+    .signup-info :is(strong){
+        color: rgb(240, 66, 158)
     }
     .signup-form{
         padding: 5px;
@@ -209,7 +216,7 @@
     }
     .infos :is(strong), .tools :is(strong), 
     .mission :is(strong), .media :is(i), .copyright :is(i, strong){
-        color: rgb(240, 66, 158);;
+        color: rgb(240, 66, 158);
     }
     .lessons{
         display: flex;
