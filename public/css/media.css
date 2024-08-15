@@ -58,7 +58,7 @@
    
 @media screen and (max-width: 365px){
     .container-fluid{
-        background: linear-gradient( to left, white,rgb(255, 148, 205), lightblue);
+        background: linear-gradient( to left, white,rgb(226, 187, 208), rgb(216, 236, 243));
     }
     html{
         scroll-behavior: smooth;
