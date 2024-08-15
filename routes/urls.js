@@ -15,7 +15,7 @@ const { default: nodemon } = require('nodemon')
     })
 
     // outline route
-    router.get('/outline', (req, res) => {
+    router.get('/course/outline', (req, res) => {
         res.render('outline')
     })
 
