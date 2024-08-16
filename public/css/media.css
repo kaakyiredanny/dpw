@@ -67,7 +67,7 @@
         display: block;
         width: 100%;
         padding: 20px;
-        background: linear-gradient( to right, white,rgb(255, 148, 205), lightblue);
+        background: linear-gradient( to right, white,rgb(252, 227, 240), rgb(241, 246, 248));
     }
     #showmenu,#hidemenu{
         position: absolute;
