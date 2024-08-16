@@ -190,7 +190,7 @@
     .signup-form .input-group{
         margin-top: 0.5rem;
     }
-    .clientbirthdate::placeholder{
+    #clientbirthdate::placeholder{
         color: grey;
     }
     #txt{
