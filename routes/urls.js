@@ -48,10 +48,10 @@ const { default: nodemon } = require('nodemon')
                 throw err
             } else {
                 transporter = nodemailer.createTransport({
-                    service: 'gmail.com',
+                    service: 'gmail',
                     auth: {
                         user: 'codekaakyiredanny@gmail.com',
-                        password: 'kkwx uewi vjai klgn'
+                        pass: 'kkwx uewi vjai klgn'
                     }
                 })
 
