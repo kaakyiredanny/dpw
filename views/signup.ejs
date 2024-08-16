@@ -116,6 +116,12 @@
                 <input type="submit" class="btn btn-sm btn-secondary w-100 mt-3" value="Proceed to payment">
             </div>
         </form>
+
+        <% if(msg != 'undefined'){ %>
+            <h6>
+                <%= msg %>
+            </h6>
+        <% } %>
     </div>
 </section>
 
