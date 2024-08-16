@@ -208,7 +208,6 @@
         padding: 5px;
         background: white;
         flex-direction: column;
-        border: 3px dashed lightblue;
     }
     .outline_banner{
         width: 100%;
@@ -280,12 +279,11 @@
         font-weight: bold;
         text-decoration: none;
     }
-    .html :where(h3){
+    .html :where(h4){
         color: deeppink;
         font-weight: bold;
-        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+        background: linear-gradient( to left, white,rgb(248, 229, 239), rgb(244, 252, 255));
         padding: 5px;
-        border-radius: 10px;
     }
     #offcanvasWithBothOptions{
         top: 20%;
