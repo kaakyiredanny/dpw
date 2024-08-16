@@ -324,7 +324,7 @@ If you have any task that performs some heavy-duty work, then you can use a Web 
 
 
     <section class="requirements">
-        <h3><i class="uil uil-user-plus"></i> How to Register for a Course</h3>
+        <h3><i class="uil uil-user-plus"></i> How to Register With Us</h3>
         <hr>
 
         <p>
@@ -341,10 +341,10 @@ If you have any task that performs some heavy-duty work, then you can use a Web 
             <hr><br>
 
             <form action="/payment/id" method="post">
-                <h4><span>*</span>Confirm Your Payment of Course</h4>
+                <h4><span>*</span>Confirm Your Payment Transaction</h4>
                 <small><span>*</span><strong>NB: Failure to send your transaction ID for verification will cause your own loss of funds. Read this carefully</strong></small>
 
-                <input type="text" class="form-control form-control-sm mt-4" name="transactionid" placeholder="Enter Payment Transaction ID here">
+                <input type="text" class="form-control form-control-sm mt-4" name="transactionid" placeholder="Enter Payment Transaction ID here" required>
                 <button type="submit" class="btn btn-sm btn-info mt-2">Send Transaction ID</button>
 
                 <% if(typeof msg != 'undefined'){ %>

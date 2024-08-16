@@ -95,7 +95,7 @@ const { default: nodemon } = require('nodemon')
                     .appreciation{
                         padding: 20px;
                     }
-                    .appreciation :is(strong, li,em, h3){
+                    .appreciation :where(strong, li,em, h3){
                         color: rgb(247, 74, 166);
                     }
                 </style>
