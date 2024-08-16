@@ -48,14 +48,20 @@ const { default: nodemon } = require('nodemon')
                 throw err
             } else {
                 transporter = nodemailer.createTransport({
-                    service: 'gmail',
+                    service: 'gmail.com',
                     auth: {
                         user: 'codekaakyiredanny@gmail.com',
                         password: 'kkwx uewi vjai klgn'
                     }
                 })
 
-                html = `
+              
+                mailoptions = {
+                    from: 'codekaakyiredanny@gmail.com',
+                    to: clientmail,
+                    subject: 'COURSE REGISTRATION',
+                    date: new Date().toUTCString(),
+                    html: `
         <!DOCTYPE html>
         <html lang="en"> 
         <head>
@@ -96,12 +102,11 @@ const { default: nodemon } = require('nodemon')
     </body>
     </html>
 `
-                mailoptions = {
-                    from: 'codekaakyiredanny@gmail.com',
-                    to: clientmail,
-                    subject: 'COURSE REGISTRATION',
-                    text: html
+                                  
                 }
+
+
+                
 
                 
                 transporter.sendMail(mailoptions, (err, info) => {
