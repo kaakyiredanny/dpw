@@ -206,6 +206,7 @@
         background: white;
         border: 3px solid lightblue;
         flex-direction: column;
+        border-radius: 10px;
     }
     .outline_banner{
         width: 100%;
@@ -309,8 +310,16 @@
         color: deeppink;
     }
 
-    /* .CSS */
-    
+    /* REQUIREMENTS.CSS */
+    .requirements{
+        margin: 6rem 0rem;
+    }
+    .requirements :where(h3,span,strong){
+        border: 2px solid lightblue;
+        padding: 5px;
+        border-radius: 10px;
+        color: darkblue;
+    }
 
 
 

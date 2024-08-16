@@ -124,6 +124,18 @@ const { default: nodemon } = require('nodemon')
     })
     
     
+
+
+    router.post('/payment/id', (req, res) => {
+        const { transactionid } = req.body
+         query =`INSERT INTO registered_students (clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue, transactionid) VALUES ('','','','','','','','', '${transactionid}')`
+        db.query(query, (err, results) => {
+            if(err) throw err
+            res.render('outline', {
+                msg: 'Thank you for confirming your transaction id'
+            })
+        })
+    })
     
     
 

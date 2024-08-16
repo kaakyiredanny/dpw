@@ -319,7 +319,43 @@ If you have any task that performs some heavy-duty work, then you can use a Web 
                 </div>
             </div>    
         </div>
+    </section>
 
+
+
+    <section class="requirements">
+        <h3><i class="uil uil-user-plus"></i> How to Register for a Course</h3>
+        <hr>
+
+        <p>
+            <strong><span>*</span>Option 1:</strong> Read through the course outline from the outline page and know your starting course model. <br><br>
+
+            <strong><span>*</span>Option 2:</strong> Click on Sign up and submit the requisite information. Make sure to provide valid information about yourself which will be used for completion of a course certificate issuance.<br><br>
+
+            
+            <strong><span>*</span>Option 3:</strong> Click on <strong>proceed to payment</strong>, copy the number <strong>+233 597639506</strong> and make the neccessary transaction from any payment platform you wish to transact with. We highly recommend <strong>MTN Mobile Money</strong>, <strong>Paystack Momo API's</strong>, <strong>TapTap Send Momo API's (TTS) and Bank Transfers </strong><br><br>
+                <span>*</span> For Bank Transfers; <br>
+                <span>*</span>Name: <strong>Daniel Nimako</strong> <br>
+                <span>*</span>Account Number: <strong>6131010111990</strong> <br>
+                <span>*</span>Branch: <strong>GCB (New Offinso)</strong>
+            <hr><br>
+
+            <form action="/payment/id" method="post">
+                <h4><span>*</span>Confirm Your Payment of Course</h4>
+                <small><span>*</span><strong>NB: Failure to send your transaction ID for verification will cause your own loss of funds. Read this carefully</strong></small>
+
+                <input type="text" class="form-control form-control-sm mt-4" name="transactionid" placeholder="Enter Payment Transaction ID here">
+                <button type="submit" class="btn btn-sm btn-info mt-2">Send Transaction ID</button>
+
+                <% if(typeof msg != 'undefined'){ %>
+                    <h6 style="color: green; font-weight: bold">
+                        <%= msg %>
+                    </h6>   
+               <% } %>
+            </form>
+
+
+        </p>
     </section>
 
 
