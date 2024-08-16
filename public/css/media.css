@@ -274,7 +274,8 @@
     .html_slides img{
         width: 100%;
         aspect-ratio: 16/9;
-        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);  
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        border-radius: 10px;  
     }
     .html_gallery{
         width: 100%;
@@ -287,6 +288,7 @@
         aspect-ratio: 16/9;
         margin: 1rem 0.1rem;
         box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
     }
     .html :where(a, strong){
         color: darkblue;
