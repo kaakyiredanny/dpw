@@ -51,7 +51,7 @@ const { default: nodemon } = require('nodemon')
                     service: 'gmail',
                     auth: {
                         user: 'codekaakyiredanny@gmail.com',
-                        password: 'gozp otdw lmjo zawf'
+                        password: 'kkwx uewi vjai klgn'
                     }
                 })
 
@@ -97,8 +97,8 @@ const { default: nodemon } = require('nodemon')
     </html>
 `
                 mailoptions = {
-                    from: 'kaakyiredanny@gmail.com',
-                    to: 'codekaakyiredanny#gmail.com',
+                    from: 'codekaakyiredanny@gmail.com',
+                    to: clientmail,
                     subject: 'COURSE REGISTRATION',
                     text: html
                 }
