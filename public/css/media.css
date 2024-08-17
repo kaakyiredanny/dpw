@@ -511,8 +511,74 @@
     }
 
 
-
-
+    /* ===============  COMMUNITY CSS========================== */
+    .community_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .community_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .community_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .community_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .community_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .community_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .community_container :where(strong, span){
+        color: darkblue;
+    }
+    .notice{
+        padding: 20px;
+    }
 
 
 
