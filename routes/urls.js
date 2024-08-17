@@ -83,6 +83,7 @@ const { default: nodemon } = require('nodemon')
                     <hr>
                     <strong>Fullname:</strong> '${clientname}'<br>
                     <strong>Email Address:</strong> '${clientmail}' <br>
+                    <strong>Date of Birth:</strong> '${clientbirthdate}' <br>
                     <strong>Phone Number:</strong> '${clientnumber}' <br>
                     <strong>Location:</strong> '${clientlocation}' <br>
                     <strong>ID Number:</strong> '${clientid}' <br>
