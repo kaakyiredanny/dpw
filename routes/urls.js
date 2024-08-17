@@ -70,7 +70,7 @@ const { default: nodemon } = require('nodemon')
             <title>mail</title>
         </head>
         <body>
-        <div class="container">
+        <div class="container" style="background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));">
             <div class="appreciation">
                 <h3>Thank you for signing up with us</h3>
                 <hr>
@@ -78,7 +78,7 @@ const { default: nodemon } = require('nodemon')
                 <p>
                     We are highly appreciated for enrolling with  <strong>DPW (Danny's Programming Workshops)</strong> online sessions
                     . Our course offers a wide range of benefits and accessibilities that opens you up for the job market. Kindly feel free to learn with us, as suggested by the course ethics we recommend having a good laptop, a good internet connectivity for joinin classes at schedule moments as follows; <br>
-                      <u>MEETING DAYS</u>
+                      <u>MEETING DAYS</u> <br>
                       <li>MONDAYS - FRIDAYS:  5:00pm - 8:00pm</li>  
                       <li>SATURDAYS: 7:00am - 12:00pm</li>  
                 </p>
