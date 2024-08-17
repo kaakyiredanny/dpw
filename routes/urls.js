@@ -41,7 +41,7 @@ const { default: nodemon } = require('nodemon')
     router.post('/signup', (req,res) => {
     const { clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue } = req.body
 
-        query =`INSERT INTO registered_students (clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue) VALUES ('${clientname}','${clientmail}','${clientbirthdate}','${clientnumber}','${clientlocation}','${clientid}','${sponsorname}','${healthissue}')`
+        query =`INSERT INTO registered_students (clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue, transactionid) VALUES ('${clientname}','${clientmail}','${clientbirthdate}','${clientnumber}','${clientlocation}','${clientid}','${sponsorname}','${healthissue}', '')`
 
         db.query(query, (err, results) => {
             if(err) {
@@ -77,14 +77,22 @@ const { default: nodemon } = require('nodemon')
 
                 <p>
                     We are highly appreciated for enrolling with  <strong>DPW (Danny's Programming Workshops)</strong> online sessions
-                    . Our course offers a wide range of benefits and accessibilities that opens you up for the job market. Kindly feel free to learn with us, as suggested by the course ethics we recommend having a good laptop, a good internet connectivity for joinin classes at schedule moments as follows;
-                      <em><u>MEETING DAYS</u></em>
-                      <li>DAYS - TIME</li>
-                      <hr>
+                    . Our course offers a wide range of benefits and accessibilities that opens you up for the job market. Kindly feel free to learn with us, as suggested by the course ethics we recommend having a good laptop, a good internet connectivity for joinin classes at schedule moments as follows; <br>
+                      <u>MEETING DAYS</u>
                       <li>MONDAYS - FRIDAYS:  5:00pm - 8:00pm</li>  
                       <li>SATURDAYS: 7:00am - 12:00pm</li>  
                 </p>
-            </div>
+            </div> <br>
+
+                    
+        <div class="copyright">
+            <strong>&COPY; 2024</strong> All Rights Reserved designed by Daniel Nimako CEO of (DPW)
+            <div class="owner"></div>
+        <h6>
+            <i class="uil uil-phone"></i> +233 597639506 <br>
+            <i class="uil uil-envelope"></i> codekaakyiredanny@gmail.com <br>
+            <i class="uil uil-map-marker"></i> Effiduasi - Ashanti Region
+        </h6>
         </div>
 
                 <style>
@@ -97,7 +105,19 @@ const { default: nodemon } = require('nodemon')
                     }
                     .appreciation :where(strong, li,em, h3){
                         color: rgb(247, 74, 166);
+                        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+                        padding: 15px;
                     }
+                    .copyright{
+                        padding: 15px;
+                        margin-top: 2rem;
+                        aspect-ratio: 16/9;
+                        font-size: 0.9rem;
+                    }
+                        .copyright :where(h6){
+                        margin-top: 2rem;
+                        font-size: 0.9rem;
+                    }    
                 </style>
     </body>
     </html>
