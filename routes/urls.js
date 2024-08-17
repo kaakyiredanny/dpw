@@ -41,7 +41,7 @@ const { default: nodemon } = require('nodemon')
     router.post('/signup', (req,res) => {
     const { clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue } = req.body
 
-        query =`INSERT INTO registered_students (clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue, transactionid) VALUES ('${clientname}','${clientmail}','${clientbirthdate}','${clientnumber}','${clientlocation}','${clientid}','${sponsorname}','${healthissue}')`
+        query =`INSERT INTO registered_students (clientname, clientmail, clientbirthdate, clientnumber, clientlocation, clientid, sponsorname, healthissue) VALUES ('${clientname}','${clientmail}','${clientbirthdate}','${clientnumber}','${clientlocation}','${clientid}','${sponsorname}','${healthissue}')`
 
         db.query(query, (err, results) => {
             if(err) {
