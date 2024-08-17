@@ -71,11 +71,11 @@ const { default: nodemon } = require('nodemon')
         </head>
         <body>
         <div class="container" style="background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));">
-            <div class="appreciation">
+            <div class="appreciation" style="background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));>
                 <h3>Thank you for signing up with us</h3>
                 <hr>
 
-                <p>
+                <p style="background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));>
                     We are highly appreciated for enrolling with  <strong style="color:  deeppink;">DPW (Danny's Programming Workshops)</strong> online sessions
                     . Our course offers a wide range of benefits and accessibilities that opens you up for the job market as you explore skills and knowledge solving daily life issues with high earning salaries. 
                     <hr>
@@ -91,7 +91,7 @@ const { default: nodemon } = require('nodemon')
                 </p>
                 <hr>
 
-                <p>
+                <p style="background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));>
                      Kindly feel free to learn with us, as suggested by the course ethics we recommend having a good laptop, a good internet connectivity for joining classes at schedule moments as follows; <br>
                       <u>MEETING DAYS</u> <br>
                       <li><strong>MONDAYS - FRIDAYS:</strong>  5:00pm - 8:00pm</li> <br>  
@@ -101,7 +101,7 @@ const { default: nodemon } = require('nodemon')
             </div> <br>
 
                     
-        <div class="copyright">
+        <div class="copyright" style="background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));>
             <strong>&COPY; 2024</strong> All Rights Reserved designed by Daniel Nimako CEO of (DPW)
             <div class="owner"></div>
         <h6>
