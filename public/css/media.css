@@ -165,8 +165,10 @@
     /*============================ SIGNUPSECTION=================================== */
     .signupsection{
         margin-top: 0.5rem;
+        margin-bottom: 2rem;
         aspect-ratio: 16/9;
-        border: 1px dashed lightblue;
+        border: 3px lightskyblue;
+        border-radius: 10px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
