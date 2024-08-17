@@ -518,6 +518,8 @@
         width: 100%;
         margin-top: -0.5rem;
         height: 300px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         aspect-ratio: 19/9;
         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
         box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
