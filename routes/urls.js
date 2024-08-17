@@ -76,6 +76,9 @@ const { default: nodemon } = require('nodemon')
                 <hr>
 
                 <p>
+                    We are highly appreciated for enrolling with  <strong style="color:  deeppink;">DPW (Danny's Programming Workshops)</strong> online sessions
+                    . Our course offers a wide range of benefits and accessibilities that opens you up for the job market as you explore skills and knowledge solving daily life issues with high earning salaries. 
+                    <hr>
                     <h4><strong><i class="uil uil-award"></i> Your Registered information</strong></h4>
                     <hr>
                     <strong>Fullname:</strong> '${clientname}'<br>
@@ -86,10 +89,10 @@ const { default: nodemon } = require('nodemon')
                     <strong>Sponsor name:</strong> '${sponsorname}' <br>
                     <strong>Health Status:</strong> '${healthissue}'<br>
                 </p>
+                <hr>
 
                 <p>
-                    We are highly appreciated for enrolling with  <strong style="color:  deeppink;">DPW (Danny's Programming Workshops)</strong> online sessions
-                    . Our course offers a wide range of benefits and accessibilities that opens you up for the job market. Kindly feel free to learn with us, as suggested by the course ethics we recommend having a good laptop, a good internet connectivity for joining classes at schedule moments as follows; <br>
+                     Kindly feel free to learn with us, as suggested by the course ethics we recommend having a good laptop, a good internet connectivity for joining classes at schedule moments as follows; <br>
                       <u>MEETING DAYS</u> <br>
                       <li><strong>MONDAYS - FRIDAYS:</strong>  5:00pm - 8:00pm</li> <br>  
                       <li><strong>SATURDAYS</strong>: 7:00am - 12:00pm</li>  
