@@ -1,5 +1,590 @@
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px){
+    .container-fluid{
+        background: linear-gradient( to left, white,rgb(248, 229, 239), rgb(244, 252, 255));
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .display{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient( to right, white,rgb(252, 227, 240), rgb(241, 246, 248));
+    }
+    #showmenu,#hidemenu{
+        position: absolute;
+        left: 82%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        top: 1%;
+        width: 50px;
+        text-align: center;
+        background: linear-gradient( to left, white,rgb(255, 148, 205), lightblue);
+    }
+    #navbar{
+        display: none; 
+        flex-direction: column;
+        width: 70%;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    .logo{
+        margin-left: 5rem;
+        aspect-ratio: 16/9;
+    }
+    .links{
+        flex-direction: column;
+        height: 250px;
+        float: right;
+        aspect-ratio: 16/9;
+    }
+    .links a{
+        text-decoration: none;
+    }
+    .links a{
+        color: rgb(104, 101, 101);
+        font-weight: 550;
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .welcome{
+        width: 100%;
+        padding: 10px;
+        color: rgb(112, 111, 111);
+        aspect-ratio: 16/9;
+    }
+    .welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(236, 228, 228);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+
+    /*============================ SIGNUPSECTION=================================== */
+    .signupsection{
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        aspect-ratio: 16/9;
+        border: 3px lightskyblue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+    }
+    .signup-info{
+        padding: 5px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .signup-info :is(i),.signup-form :is(i){
+        color: deeppink;
+    }
+    .signup-info :is(strong){
+        color: rgb(240, 66, 158)
+    }
+    .signup-form{
+        padding: 5px;
+        margin-bottom: 3rem;
+    }
+    .signup-form .input-group{
+        margin-top: 0.5rem;
+    }
+    #txt{
+        padding: 10px;
+    }
+
+
+
+
+    /* =================OUTLINE PAGE=============================================================== */
+    .outline_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .outline_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .outline_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .outline_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .outline_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .html,.css,.interactive{
+        width: 100%;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+    }
+    .html_slides{
+        width: 100%;
+        height: 250px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);  
+    }
+    .html_slides img{
+        width: 100%;
+        aspect-ratio: 16/9;
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        border-radius: 10px;  
+    }
+    .html_gallery{
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-top: 1rem;
+        padding: 10px;
+    }
+    .html_gallery img{
+        width: 140px;
+        aspect-ratio: 16/9;
+        margin: 1rem 0.1rem;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .html :where(a, strong){
+        color: darkblue;
+    }
+    .html :where(a),.css :where(a){
+        color: deeppink;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* =================OFF CANVAS CSS============================================= */
+    #offcanvasWithBothOptions,#csscanvas,#interactivecanvas{
+        top: 20%;
+        width: 70%;
+        aspect-ratio: 16/9;
+        border-bottom-right-radius: 100px;
+        /* box-shadow: 0px 50px 50px rgba(0,0,0,0.1); */
+    }
+    #offcanvasWithBothOptions :where(li),#csscanvas :where(li), #interactivecanvas :where(li){
+        color: indigo;
+    }
+    #offcanvasWithBothOptions :where(h5, button, i), #csscanvas :where(h5, button, i, span), #interactivecanvas :where(h5, button, i, span){
+        color: deeppink;
+    }
+    /* ==============END OF CNAVAS===================================================== */
+
+
+
+    /* ===================REQUIREMENTS.CSS=========================================== */
+    .requirements{
+        margin: 6rem 0rem;
+    }
+    .requirements :where(h3,span,strong){
+        border: 2px solid lightblue;
+        padding: 5px;
+        border-radius: 10px;
+        color: darkblue;
+    }
+
+
+
+
+    /*======================== SEMINAR PAGE CSS===================================== */
+    .seminar_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .seminar_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+            border: 3px solid deeppink;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+            border: 3px solid lightskyblue;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+            border: 3px solid white;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+            border: 3px solid deeppink;
+        }
+    }
+    .seminar_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .seminar_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .seminar_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(a, strong){
+        color: darkblue;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(h4){
+        color: deeppink;
+    }
+    /* ================END OF SEMINAR CSS=============================================== */
+
+
+    
+    /* =====================MIDDLE SECTION================================================== */
+    .middlesection{
+        margin: 1rem 0rem;
+        width: 100%;
+        border: 1px solid lightblue;
+        aspect-ratio: 16/9;
+        background: linear-gradient(to right, whitesmoke, lightblue,rgb(255, 148, 205));
+    }
+    .keys{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        text-align: center;
+    }
+    .key{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .key :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .image{
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    .key .image img{
+        width: 90%;
+        height: 120px;
+    }
+    .notes{
+        margin-top: 1rem;
+    }
+
+
+    /* ================= ABOUT PAGE CSS=============================================== */
+    .about_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .about_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .about_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .about_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .about_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .about_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .about_container :where(strong, span){
+        color: darkblue;
+    }
+
+
+    /* ===============  COMMUNITY CSS========================== */
+    .community_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .community_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .community_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .community_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .community_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .community_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .community_container :where(strong, span){
+        color: darkblue;
+    }
+    .notice{
+        padding: 20px;
+    }
+
+
+
+
+    
+
+    /* ===========================FOOTER PART================================= */
+    .bottomsection{
+        background: linear-gradient(to bottom, lightblue, whitesmoke,rgb(255, 148, 205),lightblue);
+        color: rgb(104, 101, 101);
+        padding: 10px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .services{
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .infos{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .infos :is(strong), .tools :is(strong), 
+    .mission :is(strong), .media :is(i), .copyright :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .lessons{
+        display: flex;
+        justify-content: space-between;
+        aspect-ratio: 16/9;
+        width: 85%;
+        flex-wrap: wrap;
+    }
+    .lessons li{
+        margin: 1rem 1rem;
+    }
+    .services .infos, .tools, .media, .mission{
+        margin-top: 1.5rem;
+    }
+    .copyright{
+        padding: 15px;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+        font-size: 0.9rem;
+    }
+    .copyright :where(h6){
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+    .owner{
+        width: 180px;
+        margin: 2rem 3.7rem;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        aspect-ratio: 16/9;
+        background-image: url('../images/Daniel\ Nimako.png');
+        background-position: center;
+        background-size: cover;
+    }
+    /*========================= END OF FOOTER SECTION ===========================================*/
     
 
 
@@ -9,6 +594,591 @@
 
 
    @media screen and (max-width: 768px){
+    .container-fluid{
+        background: linear-gradient( to left, white,rgb(248, 229, 239), rgb(244, 252, 255));
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .display{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient( to right, white,rgb(252, 227, 240), rgb(241, 246, 248));
+    }
+    #showmenu,#hidemenu{
+        position: absolute;
+        left: 82%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        top: 1%;
+        width: 50px;
+        text-align: center;
+        background: linear-gradient( to left, white,rgb(255, 148, 205), lightblue);
+    }
+    #navbar{
+        display: none; 
+        flex-direction: column;
+        width: 70%;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    .logo{
+        margin-left: 5rem;
+        aspect-ratio: 16/9;
+    }
+    .links{
+        flex-direction: column;
+        height: 250px;
+        float: right;
+        aspect-ratio: 16/9;
+    }
+    .links a{
+        text-decoration: none;
+    }
+    .links a{
+        color: rgb(104, 101, 101);
+        font-weight: 550;
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .welcome{
+        width: 100%;
+        padding: 10px;
+        color: rgb(112, 111, 111);
+        aspect-ratio: 16/9;
+    }
+    .welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(236, 228, 228);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+
+    /*============================ SIGNUPSECTION=================================== */
+    .signupsection{
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        aspect-ratio: 16/9;
+        border: 3px lightskyblue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+    }
+    .signup-info{
+        padding: 5px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .signup-info :is(i),.signup-form :is(i){
+        color: deeppink;
+    }
+    .signup-info :is(strong){
+        color: rgb(240, 66, 158)
+    }
+    .signup-form{
+        padding: 5px;
+        margin-bottom: 3rem;
+    }
+    .signup-form .input-group{
+        margin-top: 0.5rem;
+    }
+    #txt{
+        padding: 10px;
+    }
+
+
+
+
+    /* =================OUTLINE PAGE=============================================================== */
+    .outline_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .outline_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .outline_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .outline_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .outline_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .html,.css,.interactive{
+        width: 100%;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+    }
+    .html_slides{
+        width: 100%;
+        height: 250px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);  
+    }
+    .html_slides img{
+        width: 100%;
+        aspect-ratio: 16/9;
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        border-radius: 10px;  
+    }
+    .html_gallery{
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-top: 1rem;
+        padding: 10px;
+    }
+    .html_gallery img{
+        width: 140px;
+        aspect-ratio: 16/9;
+        margin: 1rem 0.1rem;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .html :where(a, strong){
+        color: darkblue;
+    }
+    .html :where(a),.css :where(a){
+        color: deeppink;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* =================OFF CANVAS CSS============================================= */
+    #offcanvasWithBothOptions,#csscanvas,#interactivecanvas{
+        top: 20%;
+        width: 70%;
+        aspect-ratio: 16/9;
+        border-bottom-right-radius: 100px;
+        /* box-shadow: 0px 50px 50px rgba(0,0,0,0.1); */
+    }
+    #offcanvasWithBothOptions :where(li),#csscanvas :where(li), #interactivecanvas :where(li){
+        color: indigo;
+    }
+    #offcanvasWithBothOptions :where(h5, button, i), #csscanvas :where(h5, button, i, span), #interactivecanvas :where(h5, button, i, span){
+        color: deeppink;
+    }
+    /* ==============END OF CNAVAS===================================================== */
+
+
+
+    /* ===================REQUIREMENTS.CSS=========================================== */
+    .requirements{
+        margin: 6rem 0rem;
+    }
+    .requirements :where(h3,span,strong){
+        border: 2px solid lightblue;
+        padding: 5px;
+        border-radius: 10px;
+        color: darkblue;
+    }
+
+
+
+
+    /*======================== SEMINAR PAGE CSS===================================== */
+    .seminar_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .seminar_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+            border: 3px solid deeppink;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+            border: 3px solid lightskyblue;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+            border: 3px solid white;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+            border: 3px solid deeppink;
+        }
+    }
+    .seminar_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .seminar_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .seminar_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(a, strong){
+        color: darkblue;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(h4){
+        color: deeppink;
+    }
+    /* ================END OF SEMINAR CSS=============================================== */
+
+
+    
+    /* =====================MIDDLE SECTION================================================== */
+    .middlesection{
+        margin: 1rem 0rem;
+        width: 100%;
+        border: 1px solid lightblue;
+        aspect-ratio: 16/9;
+        background: linear-gradient(to right, whitesmoke, lightblue,rgb(255, 148, 205));
+    }
+    .keys{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        text-align: center;
+    }
+    .key{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .key :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .image{
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    .key .image img{
+        width: 90%;
+        height: 120px;
+    }
+    .notes{
+        margin-top: 1rem;
+    }
+
+
+    /* ================= ABOUT PAGE CSS=============================================== */
+    .about_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .about_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .about_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .about_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .about_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .about_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .about_container :where(strong, span){
+        color: darkblue;
+    }
+
+
+    /* ===============  COMMUNITY CSS========================== */
+    .community_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .community_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .community_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .community_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .community_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .community_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .community_container :where(strong, span){
+        color: darkblue;
+    }
+    .notice{
+        padding: 20px;
+    }
+
+
+
+
+    
+
+    /* ===========================FOOTER PART================================= */
+    .bottomsection{
+        background: linear-gradient(to bottom, lightblue, whitesmoke,rgb(255, 148, 205),lightblue);
+        color: rgb(104, 101, 101);
+        padding: 10px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .services{
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .infos{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .infos :is(strong), .tools :is(strong), 
+    .mission :is(strong), .media :is(i), .copyright :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .lessons{
+        display: flex;
+        justify-content: space-between;
+        aspect-ratio: 16/9;
+        width: 85%;
+        flex-wrap: wrap;
+    }
+    .lessons li{
+        margin: 1rem 1rem;
+    }
+    .services .infos, .tools, .media, .mission{
+        margin-top: 1.5rem;
+    }
+    .copyright{
+        padding: 15px;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+        font-size: 0.9rem;
+    }
+    .copyright :where(h6){
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+    .owner{
+        width: 180px;
+        margin: 2rem 3.7rem;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        aspect-ratio: 16/9;
+        background-image: url('../images/Daniel\ Nimako.png');
+        background-position: center;
+        background-size: cover;
+    }
+    /*========================= END OF FOOTER SECTION ===========================================*/
 
 
    }
@@ -16,6 +1186,591 @@
 
    
    @media screen and (max-width: 652px){
+    .container-fluid{
+        background: linear-gradient( to left, white,rgb(248, 229, 239), rgb(244, 252, 255));
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .display{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient( to right, white,rgb(252, 227, 240), rgb(241, 246, 248));
+    }
+    #showmenu,#hidemenu{
+        position: absolute;
+        left: 82%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        top: 1%;
+        width: 50px;
+        text-align: center;
+        background: linear-gradient( to left, white,rgb(255, 148, 205), lightblue);
+    }
+    #navbar{
+        display: none; 
+        flex-direction: column;
+        width: 70%;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    .logo{
+        margin-left: 5rem;
+        aspect-ratio: 16/9;
+    }
+    .links{
+        flex-direction: column;
+        height: 250px;
+        float: right;
+        aspect-ratio: 16/9;
+    }
+    .links a{
+        text-decoration: none;
+    }
+    .links a{
+        color: rgb(104, 101, 101);
+        font-weight: 550;
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .welcome{
+        width: 100%;
+        padding: 10px;
+        color: rgb(112, 111, 111);
+        aspect-ratio: 16/9;
+    }
+    .welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(236, 228, 228);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+
+    /*============================ SIGNUPSECTION=================================== */
+    .signupsection{
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        aspect-ratio: 16/9;
+        border: 3px lightskyblue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+    }
+    .signup-info{
+        padding: 5px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .signup-info :is(i),.signup-form :is(i){
+        color: deeppink;
+    }
+    .signup-info :is(strong){
+        color: rgb(240, 66, 158)
+    }
+    .signup-form{
+        padding: 5px;
+        margin-bottom: 3rem;
+    }
+    .signup-form .input-group{
+        margin-top: 0.5rem;
+    }
+    #txt{
+        padding: 10px;
+    }
+
+
+
+
+    /* =================OUTLINE PAGE=============================================================== */
+    .outline_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .outline_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .outline_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .outline_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .outline_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .html,.css,.interactive{
+        width: 100%;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+    }
+    .html_slides{
+        width: 100%;
+        height: 250px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);  
+    }
+    .html_slides img{
+        width: 100%;
+        aspect-ratio: 16/9;
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        border-radius: 10px;  
+    }
+    .html_gallery{
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-top: 1rem;
+        padding: 10px;
+    }
+    .html_gallery img{
+        width: 140px;
+        aspect-ratio: 16/9;
+        margin: 1rem 0.1rem;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .html :where(a, strong){
+        color: darkblue;
+    }
+    .html :where(a),.css :where(a){
+        color: deeppink;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* =================OFF CANVAS CSS============================================= */
+    #offcanvasWithBothOptions,#csscanvas,#interactivecanvas{
+        top: 20%;
+        width: 70%;
+        aspect-ratio: 16/9;
+        border-bottom-right-radius: 100px;
+        /* box-shadow: 0px 50px 50px rgba(0,0,0,0.1); */
+    }
+    #offcanvasWithBothOptions :where(li),#csscanvas :where(li), #interactivecanvas :where(li){
+        color: indigo;
+    }
+    #offcanvasWithBothOptions :where(h5, button, i), #csscanvas :where(h5, button, i, span), #interactivecanvas :where(h5, button, i, span){
+        color: deeppink;
+    }
+    /* ==============END OF CNAVAS===================================================== */
+
+
+
+    /* ===================REQUIREMENTS.CSS=========================================== */
+    .requirements{
+        margin: 6rem 0rem;
+    }
+    .requirements :where(h3,span,strong){
+        border: 2px solid lightblue;
+        padding: 5px;
+        border-radius: 10px;
+        color: darkblue;
+    }
+
+
+
+
+    /*======================== SEMINAR PAGE CSS===================================== */
+    .seminar_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .seminar_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+            border: 3px solid deeppink;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+            border: 3px solid lightskyblue;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+            border: 3px solid white;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+            border: 3px solid deeppink;
+        }
+    }
+    .seminar_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .seminar_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .seminar_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(a, strong){
+        color: darkblue;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(h4){
+        color: deeppink;
+    }
+    /* ================END OF SEMINAR CSS=============================================== */
+
+
+    
+    /* =====================MIDDLE SECTION================================================== */
+    .middlesection{
+        margin: 1rem 0rem;
+        width: 100%;
+        border: 1px solid lightblue;
+        aspect-ratio: 16/9;
+        background: linear-gradient(to right, whitesmoke, lightblue,rgb(255, 148, 205));
+    }
+    .keys{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        text-align: center;
+    }
+    .key{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .key :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .image{
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    .key .image img{
+        width: 90%;
+        height: 120px;
+    }
+    .notes{
+        margin-top: 1rem;
+    }
+
+
+    /* ================= ABOUT PAGE CSS=============================================== */
+    .about_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .about_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .about_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .about_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .about_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .about_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .about_container :where(strong, span){
+        color: darkblue;
+    }
+
+
+    /* ===============  COMMUNITY CSS========================== */
+    .community_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .community_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .community_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .community_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .community_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .community_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .community_container :where(strong, span){
+        color: darkblue;
+    }
+    .notice{
+        padding: 20px;
+    }
+
+
+
+
+    
+
+    /* ===========================FOOTER PART================================= */
+    .bottomsection{
+        background: linear-gradient(to bottom, lightblue, whitesmoke,rgb(255, 148, 205),lightblue);
+        color: rgb(104, 101, 101);
+        padding: 10px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .services{
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .infos{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .infos :is(strong), .tools :is(strong), 
+    .mission :is(strong), .media :is(i), .copyright :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .lessons{
+        display: flex;
+        justify-content: space-between;
+        aspect-ratio: 16/9;
+        width: 85%;
+        flex-wrap: wrap;
+    }
+    .lessons li{
+        margin: 1rem 1rem;
+    }
+    .services .infos, .tools, .media, .mission{
+        margin-top: 1.5rem;
+    }
+    .copyright{
+        padding: 15px;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+        font-size: 0.9rem;
+    }
+    .copyright :where(h6){
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+    .owner{
+        width: 180px;
+        margin: 2rem 3.7rem;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        aspect-ratio: 16/9;
+        background-image: url('../images/Daniel\ Nimako.png');
+        background-position: center;
+        background-size: cover;
+    }
+    /*========================= END OF FOOTER SECTION ===========================================*/
 
 
 
@@ -27,6 +1782,591 @@
 
 
    @media screen and (max-width: 576px){
+    .container-fluid{
+        background: linear-gradient( to left, white,rgb(248, 229, 239), rgb(244, 252, 255));
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .display{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient( to right, white,rgb(252, 227, 240), rgb(241, 246, 248));
+    }
+    #showmenu,#hidemenu{
+        position: absolute;
+        left: 82%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        top: 1%;
+        width: 50px;
+        text-align: center;
+        background: linear-gradient( to left, white,rgb(255, 148, 205), lightblue);
+    }
+    #navbar{
+        display: none; 
+        flex-direction: column;
+        width: 70%;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    .logo{
+        margin-left: 5rem;
+        aspect-ratio: 16/9;
+    }
+    .links{
+        flex-direction: column;
+        height: 250px;
+        float: right;
+        aspect-ratio: 16/9;
+    }
+    .links a{
+        text-decoration: none;
+    }
+    .links a{
+        color: rgb(104, 101, 101);
+        font-weight: 550;
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .welcome{
+        width: 100%;
+        padding: 10px;
+        color: rgb(112, 111, 111);
+        aspect-ratio: 16/9;
+    }
+    .welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(236, 228, 228);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+
+    /*============================ SIGNUPSECTION=================================== */
+    .signupsection{
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        aspect-ratio: 16/9;
+        border: 3px lightskyblue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+    }
+    .signup-info{
+        padding: 5px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .signup-info :is(i),.signup-form :is(i){
+        color: deeppink;
+    }
+    .signup-info :is(strong){
+        color: rgb(240, 66, 158)
+    }
+    .signup-form{
+        padding: 5px;
+        margin-bottom: 3rem;
+    }
+    .signup-form .input-group{
+        margin-top: 0.5rem;
+    }
+    #txt{
+        padding: 10px;
+    }
+
+
+
+
+    /* =================OUTLINE PAGE=============================================================== */
+    .outline_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .outline_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .outline_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .outline_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .outline_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .html,.css,.interactive{
+        width: 100%;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+    }
+    .html_slides{
+        width: 100%;
+        height: 250px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);  
+    }
+    .html_slides img{
+        width: 100%;
+        aspect-ratio: 16/9;
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        border-radius: 10px;  
+    }
+    .html_gallery{
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-top: 1rem;
+        padding: 10px;
+    }
+    .html_gallery img{
+        width: 140px;
+        aspect-ratio: 16/9;
+        margin: 1rem 0.1rem;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .html :where(a, strong){
+        color: darkblue;
+    }
+    .html :where(a),.css :where(a){
+        color: deeppink;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* =================OFF CANVAS CSS============================================= */
+    #offcanvasWithBothOptions,#csscanvas,#interactivecanvas{
+        top: 20%;
+        width: 70%;
+        aspect-ratio: 16/9;
+        border-bottom-right-radius: 100px;
+        /* box-shadow: 0px 50px 50px rgba(0,0,0,0.1); */
+    }
+    #offcanvasWithBothOptions :where(li),#csscanvas :where(li), #interactivecanvas :where(li){
+        color: indigo;
+    }
+    #offcanvasWithBothOptions :where(h5, button, i), #csscanvas :where(h5, button, i, span), #interactivecanvas :where(h5, button, i, span){
+        color: deeppink;
+    }
+    /* ==============END OF CNAVAS===================================================== */
+
+
+
+    /* ===================REQUIREMENTS.CSS=========================================== */
+    .requirements{
+        margin: 6rem 0rem;
+    }
+    .requirements :where(h3,span,strong){
+        border: 2px solid lightblue;
+        padding: 5px;
+        border-radius: 10px;
+        color: darkblue;
+    }
+
+
+
+
+    /*======================== SEMINAR PAGE CSS===================================== */
+    .seminar_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .seminar_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+            border: 3px solid deeppink;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+            border: 3px solid lightskyblue;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+            border: 3px solid white;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+            border: 3px solid deeppink;
+        }
+    }
+    .seminar_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .seminar_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .seminar_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(a, strong){
+        color: darkblue;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(h4){
+        color: deeppink;
+    }
+    /* ================END OF SEMINAR CSS=============================================== */
+
+
+    
+    /* =====================MIDDLE SECTION================================================== */
+    .middlesection{
+        margin: 1rem 0rem;
+        width: 100%;
+        border: 1px solid lightblue;
+        aspect-ratio: 16/9;
+        background: linear-gradient(to right, whitesmoke, lightblue,rgb(255, 148, 205));
+    }
+    .keys{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        text-align: center;
+    }
+    .key{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .key :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .image{
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    .key .image img{
+        width: 90%;
+        height: 120px;
+    }
+    .notes{
+        margin-top: 1rem;
+    }
+
+
+    /* ================= ABOUT PAGE CSS=============================================== */
+    .about_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .about_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .about_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .about_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .about_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .about_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .about_container :where(strong, span){
+        color: darkblue;
+    }
+
+
+    /* ===============  COMMUNITY CSS========================== */
+    .community_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .community_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .community_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .community_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .community_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .community_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .community_container :where(strong, span){
+        color: darkblue;
+    }
+    .notice{
+        padding: 20px;
+    }
+
+
+
+
+    
+
+    /* ===========================FOOTER PART================================= */
+    .bottomsection{
+        background: linear-gradient(to bottom, lightblue, whitesmoke,rgb(255, 148, 205),lightblue);
+        color: rgb(104, 101, 101);
+        padding: 10px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .services{
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .infos{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .infos :is(strong), .tools :is(strong), 
+    .mission :is(strong), .media :is(i), .copyright :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .lessons{
+        display: flex;
+        justify-content: space-between;
+        aspect-ratio: 16/9;
+        width: 85%;
+        flex-wrap: wrap;
+    }
+    .lessons li{
+        margin: 1rem 1rem;
+    }
+    .services .infos, .tools, .media, .mission{
+        margin-top: 1.5rem;
+    }
+    .copyright{
+        padding: 15px;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+        font-size: 0.9rem;
+    }
+    .copyright :where(h6){
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+    .owner{
+        width: 180px;
+        margin: 2rem 3.7rem;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        aspect-ratio: 16/9;
+        background-image: url('../images/Daniel\ Nimako.png');
+        background-position: center;
+        background-size: cover;
+    }
+    /*========================= END OF FOOTER SECTION ===========================================*/
 
 
 }
@@ -36,6 +2376,591 @@
 
 
    @media screen and (max-width: 480px){
+    .container-fluid{
+        background: linear-gradient( to left, white,rgb(248, 229, 239), rgb(244, 252, 255));
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .display{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient( to right, white,rgb(252, 227, 240), rgb(241, 246, 248));
+    }
+    #showmenu,#hidemenu{
+        position: absolute;
+        left: 82%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        top: 1%;
+        width: 50px;
+        text-align: center;
+        background: linear-gradient( to left, white,rgb(255, 148, 205), lightblue);
+    }
+    #navbar{
+        display: none; 
+        flex-direction: column;
+        width: 70%;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    .logo{
+        margin-left: 5rem;
+        aspect-ratio: 16/9;
+    }
+    .links{
+        flex-direction: column;
+        height: 250px;
+        float: right;
+        aspect-ratio: 16/9;
+    }
+    .links a{
+        text-decoration: none;
+    }
+    .links a{
+        color: rgb(104, 101, 101);
+        font-weight: 550;
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .welcome{
+        width: 100%;
+        padding: 10px;
+        color: rgb(112, 111, 111);
+        aspect-ratio: 16/9;
+    }
+    .welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(236, 228, 228);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+
+    /*============================ SIGNUPSECTION=================================== */
+    .signupsection{
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        aspect-ratio: 16/9;
+        border: 3px lightskyblue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: linear-gradient( to bottom, lightblue, whitesmoke,rgb(255, 148, 205));
+    }
+    .signup-info{
+        padding: 5px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .signup-info :is(i),.signup-form :is(i){
+        color: deeppink;
+    }
+    .signup-info :is(strong){
+        color: rgb(240, 66, 158)
+    }
+    .signup-form{
+        padding: 5px;
+        margin-bottom: 3rem;
+    }
+    .signup-form .input-group{
+        margin-top: 0.5rem;
+    }
+    #txt{
+        padding: 10px;
+    }
+
+
+
+
+    /* =================OUTLINE PAGE=============================================================== */
+    .outline_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .outline_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/laughter.webp');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/laughing.jpg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/codelab.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/girlcoding.png');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .outline_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .outline_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .outline_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .html,.css,.interactive{
+        width: 100%;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+    }
+    .html_slides{
+        width: 100%;
+        height: 250px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);  
+    }
+    .html_slides img{
+        width: 100%;
+        aspect-ratio: 16/9;
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        border-radius: 10px;  
+    }
+    .html_gallery{
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-top: 1rem;
+        padding: 10px;
+    }
+    .html_gallery img{
+        width: 140px;
+        aspect-ratio: 16/9;
+        margin: 1rem 0.1rem;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .html :where(a, strong){
+        color: darkblue;
+    }
+    .html :where(a),.css :where(a){
+        color: deeppink;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* =================OFF CANVAS CSS============================================= */
+    #offcanvasWithBothOptions,#csscanvas,#interactivecanvas{
+        top: 20%;
+        width: 70%;
+        aspect-ratio: 16/9;
+        border-bottom-right-radius: 100px;
+        /* box-shadow: 0px 50px 50px rgba(0,0,0,0.1); */
+    }
+    #offcanvasWithBothOptions :where(li),#csscanvas :where(li), #interactivecanvas :where(li){
+        color: indigo;
+    }
+    #offcanvasWithBothOptions :where(h5, button, i), #csscanvas :where(h5, button, i, span), #interactivecanvas :where(h5, button, i, span){
+        color: deeppink;
+    }
+    /* ==============END OF CNAVAS===================================================== */
+
+
+
+    /* ===================REQUIREMENTS.CSS=========================================== */
+    .requirements{
+        margin: 6rem 0rem;
+    }
+    .requirements :where(h3,span,strong){
+        border: 2px solid lightblue;
+        padding: 5px;
+        border-radius: 10px;
+        color: darkblue;
+    }
+
+
+
+
+    /*======================== SEMINAR PAGE CSS===================================== */
+    .seminar_container{
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        margin: 2rem 0rem 3rem;
+        padding: 5px;
+        background: white;
+        border: 3px solid lightblue;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .seminar_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+            border: 3px solid deeppink;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+            border: 3px solid lightskyblue;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+            border: 3px solid white;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+            border: 3px solid deeppink;
+        }
+    }
+    .seminar_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .seminar_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .seminar_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(a, strong){
+        color: darkblue;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .seminar_container :where(h4){
+        color: deeppink;
+    }
+    /* ================END OF SEMINAR CSS=============================================== */
+
+
+    
+    /* =====================MIDDLE SECTION================================================== */
+    .middlesection{
+        margin: 1rem 0rem;
+        width: 100%;
+        border: 1px solid lightblue;
+        aspect-ratio: 16/9;
+        background: linear-gradient(to right, whitesmoke, lightblue,rgb(255, 148, 205));
+    }
+    .keys{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        text-align: center;
+    }
+    .key{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .key :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .image{
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    .key .image img{
+        width: 90%;
+        height: 120px;
+    }
+    .notes{
+        margin-top: 1rem;
+    }
+
+
+    /* ================= ABOUT PAGE CSS=============================================== */
+    .about_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .about_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .about_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .about_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .about_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .about_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .about_container :where(strong, span){
+        color: darkblue;
+    }
+
+
+    /* ===============  COMMUNITY CSS========================== */
+    .community_banner{
+        width: 100%;
+        margin-top: -0.5rem;
+        height: 300px;
+        aspect-ratio: 19/9;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.1);
+        animation: danny 40s linear forwards infinite alternate;  
+    }
+    @keyframes danny {
+        0%{
+            background-image: url('../images/sem1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background-image: url('../images/sem2.jpeg');
+            background-position: center;
+        }
+        50%{
+            background-image: url('../images/sem3.jpg');
+            background-position: center;
+        }
+        75%{
+            background-image: url('../images/sem4.jpg');
+            background-position: center;
+        }
+        100%{
+            background-image: url('../images/flyer.jpg');
+            background-position: contain;
+        }
+    }
+    .community_banner :where(a){
+        margin: 0rem 1rem;
+    }
+    .community_welcome :where(h2){
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        background-color: rgba(0,0,0,0.3);
+        padding: 15px;
+        color: rgb(248, 241, 241);
+        width: 70%;
+        border-radius: 10px;
+    }
+    .community_welcome :where(span){
+        color: deeppink;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .community_container{
+        width: 100%;
+        padding: 10px;
+        aspect-ratio: 16/9;
+        user-select: none;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        border: 3px solid lightblue;
+        border-radius: 10px;
+    }
+    .community_container :where(h3){
+        margin-top: 3rem;
+        color: deeppink;
+    }
+    .community_container :where(strong, span){
+        color: darkblue;
+    }
+    .notice{
+        padding: 20px;
+    }
+
+
+
+
+    
+
+    /* ===========================FOOTER PART================================= */
+    .bottomsection{
+        background: linear-gradient(to bottom, lightblue, whitesmoke,rgb(255, 148, 205),lightblue);
+        color: rgb(104, 101, 101);
+        padding: 10px;
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .services{
+        padding: 10px;
+        aspect-ratio: 16/9;
+    }
+    .infos{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .infos :is(strong), .tools :is(strong), 
+    .mission :is(strong), .media :is(i), .copyright :is(i, strong){
+        color: rgb(240, 66, 158);
+    }
+    .lessons{
+        display: flex;
+        justify-content: space-between;
+        aspect-ratio: 16/9;
+        width: 85%;
+        flex-wrap: wrap;
+    }
+    .lessons li{
+        margin: 1rem 1rem;
+    }
+    .services .infos, .tools, .media, .mission{
+        margin-top: 1.5rem;
+    }
+    .copyright{
+        padding: 15px;
+        margin-top: 2rem;
+        aspect-ratio: 16/9;
+        font-size: 0.9rem;
+    }
+    .copyright :where(h6){
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+    .owner{
+        width: 180px;
+        margin: 2rem 3.7rem;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        aspect-ratio: 16/9;
+        background-image: url('../images/Daniel\ Nimako.png');
+        background-position: center;
+        background-size: cover;
+    }
+    /*========================= END OF FOOTER SECTION ===========================================*/
 
 
 
