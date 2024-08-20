@@ -45,7 +45,7 @@
 
                         </h2>
                          
-                        <a href="#outline_container"><button class="btn btn-sm btn-info">Explore Outline Session <i class="uil uil-signout"></i></button></a>
+                        <a href="#outline_container"><button class="btn btn-sm btn-info" id="to">Explore Outline Session <i class="uil uil-signout"></i></button></a>
                     </div>
                 </div>
             
@@ -155,7 +155,7 @@ HTML is constantly evolving, with <strong>new versions and specifications</stron
                         <p>
                             <strong>CSS stands for Cascading Style Sheets</strong>, and it's used to add style to a web page by dictating how a site is displayed on a browser. <strong>CSS</strong> is unique in that it doesn't create any new elements, like HTML or JavaScript. Instead, it's a language used to style HTML elements.
                         </p>
-                        <hr>
+                        
     
                         <div class="html_gallery">
                             <img src="/images/cimage.jpg" loading="lazy" class="img-fluid" alt="" fetchpriority="high" decoding="async" role="presentation">
@@ -164,12 +164,13 @@ HTML is constantly evolving, with <strong>new versions and specifications</stron
                             <img src="/images/cimage4.png" loading="lazy" class="img-fluid" alt="" fetchpriority="high" decoding="async" role="presentation">
                         </div>
     
-                        <hr>
+                        
                         <p>
                             <strong>Secondly, Our course structure</strong> we are going take the fundamentals of CSS Language which is the second point of our clients journey. With CSS, you <strong>understands the design</strong> behind applications and systems. <a href="#" data-bs-toggle="offcanvas" data-bs-target="#csscanvas" aria-controls="csscanvas"><i class="uil uil-brackets-curly"></i> CSS Features</a>
                         </p>
                         
-                        
+                        <hr>
+
                         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="csscanvas" aria-labelledby="csscanvas">
                             <div class="offcanvas-header">
                               <h5 class="offcanvas-title" id="csscanvas"><i class="uil uil-brackets-curly"></i> CSS Features</h5>
@@ -340,12 +341,12 @@ If you have any task that performs some heavy-duty work, then you can use a Web 
                 <span>*</span>Branch: <strong>GCB (New Offinso)</strong>
             <hr><br>
 
-            <form action="/payment/id" method="post">
+            <form action="/payment/id" method="post" id="tnxform">
                 <h4><span>*</span>Confirm Your Payment Transaction</h4>
                 <small><span>*</span><strong>NB: Failure to send your transaction ID for verification will cause your own loss of funds. Read this carefully</strong></small>
 
                 <input type="text" class="form-control form-control-sm mt-4" name="transactionid" placeholder="Enter Payment Transaction ID here" required>
-                <button type="submit" class="btn btn-sm btn-info mt-2">Send Transaction ID</button>
+                <button type="submit" class="btn btn-sm btn-info mt-2" id="sub">Send Transaction ID</button>
 
                 <% if(typeof msg != 'undefined'){ %>
                     <h6 style="color: green; font-weight: bold">
@@ -353,7 +354,7 @@ If you have any task that performs some heavy-duty work, then you can use a Web 
                     </h6>   
                <% } %>
             </form>
-
+            <hr>
             
 
         </p>
